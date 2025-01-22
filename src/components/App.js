@@ -6,9 +6,9 @@ import WeatherDisplay from "./WeatherDisplay";
 
 const App = () => {
 
- const[temperature,setTemperature] = useState(18);
- const[conditions,setConditions]   = useState("sunny");
- const [weather, setWeather] = useState({ Temp: 18, Cond: "sunny" });
+ const[temperature,setTemperature] = useState(25);
+ const[conditions,setConditions]   = useState("Sunny");
+ const [weather, setWeather] = useState({ Temp: 25, Cond: "Sunny" });
 
 
  const handleTemperatureChange = (e) => {
