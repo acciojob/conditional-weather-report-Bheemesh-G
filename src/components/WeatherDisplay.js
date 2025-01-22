@@ -20,7 +20,8 @@ const WeatherDisplay = (props) => {
     return (
       <div>
         <span className={above ? "heat" : "Heat"}>Temperature: {props.data.Temp}</span>
-        <p>{props.data.Cond}</p>
+        <br></br>
+        <span>{props.data.Cond}</span>
       </div>
     );
   };
