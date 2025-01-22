@@ -19,9 +19,12 @@ const WeatherDisplay = (props) => {
 
     return (
       <div>
-        <span className={above ? "heat" : "Heat"}>Temperature: {props.data.Temp}</span>
+        <p className={above ? "heat" : "Heat"}>Temperature: {props.data.Temp}</p>
+        <p>Conditions: {props.data.Cond}</p>
         <br></br>
-        <span>{props.data.Cond}</span>
+        <span style={{ color: above ? 'red' : 'blue' }}>
+        {above ? 'Hot' : 'Cold'}
+      </span>
       </div>
     );
   };
