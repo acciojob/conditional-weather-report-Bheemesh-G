@@ -7,12 +7,7 @@ import '../styles/Weather.css';
 
 
 const WeatherDisplay = (props) => {
-    console.log(typeof props.data.Temp);
-    console.log(typeof props.data.Cond);
-
     const[above,setAbove] = useState(false);
-
-
     useEffect(() => {
         if (props.data.Temp > 20) {
           setAbove(true);
@@ -24,7 +19,7 @@ const WeatherDisplay = (props) => {
 
     return (
       <div>
-        <p className={above ? "heat" : "Heat"}>{props.data.Temp}°C</p>
+        <span className={above ? "heat" : "Heat"}>Temperature: {props.data.Temp}</span>
         <p>{props.data.Cond}</p>
       </div>
     );
